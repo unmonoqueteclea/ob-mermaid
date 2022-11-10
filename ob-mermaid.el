@@ -59,13 +59,13 @@
                       " -i " (org-babel-process-file-name temp-file)
                       " -o " (org-babel-process-file-name out-file)
 		      (when theme
-			(concat " -t " theme))
+			(concat " -t \"" theme "\""))
 		      (when background-color
 			(concat " -b " background-color))
 		      (when width
-			(concat " -w " width))
+			(concat " -w \"" width "\""))
 		      (when height
-			(concat " -H " height))
+			(concat " -H \"" height "\""))
 		      (when mermaid-config-file
 			(concat " -c " (org-babel-process-file-name mermaid-config-file)))
 		      (when css-file
